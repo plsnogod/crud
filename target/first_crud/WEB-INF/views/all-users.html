@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:c="">
+<head>
+    <meta charset="UTF-8">
+    <title>All Users</title>
+</head>
+<body>
+<br>
+ <table>
+    <tr>
+        <th>First_Name</th>
+        <th>Last_Name</th>
+        <th>E-mail</th>
+        <th>User Sex</th>
+    </tr>
+     <c:forEach var="us" items="${all_us}">
+        <tr>
+            <td>${emp.name}</td>
+            <td>${emp.lastname}</td>
+            <td>${emp.email}</td>
+            <td>${emp.sex}</td>
+        </tr>
+     </c:forEach>
+
+ </table>
+
+</body>
+</html>
